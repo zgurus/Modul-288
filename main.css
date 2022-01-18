@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* ************************************************************************* *
+ *                                                                           *
+ * Base                                                                      *
+ *                                                                           *
+ * ************************************************************************* */
+/* ********************************* *
+   Normalize
+ * ********************************* */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+p.r {
+  margin-left: 150px;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.logo {
+  width: 50px;
+}
+
+img.bild {
+  height: 1000px;
+  margin-left: 500px;
+}
+
+img.pers {
+  height: 300px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+
+main {
+  color: #262b2c;
+}
+
+video {
+  margin: 50px 0 30px 150px;
+  height: 500px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 700;
+  margin: 100px 0 30px 150px;
+}
+
+
+hr {
+  color: #FA3B51;
+  margin: 0 150px 50px 150px;
+}
+
+
+
+
+h2 {
+  font-size: 28px;
+  line-height: 35px;
+  margin: 30px 0 16px 0;
+  font-weight: 700;
+}
+
+
+
+
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+div.mb-3 {
+  margin: 0 150px 0 150px;
+}
+
+div.row.g-0 {
+  margin: 0 150px 0 150px;
+}
+
+button.btn-btn-primary {
+  padding: 10px;
+  size: 50px 20px;
+  margin-left: 150px;
+  margin-bottom: 220px;
+  background-color: #FA3B51;
+}
+
+
+
+/* ********************************* *
+   Header
+ * ********************************* */
+body>header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #262b2c;
+  border-bottom: 2px solid #FA3B51;
+}
+
+@media (min-width: 768px) {
+  body>header {
+    padding: 36px 50px 36px 38px;
+  }
+}
+
+body>header a {
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  body>header a {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+body>header a.header__home {
+  position: relative;
+  padding: 8px 12px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  body>header a.header__home {
+    margin-right: 76px;
+  }
+
+  body>header a.header__home:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 2px;
+    top: 0;
+    right: -38px;
+    bottom: 0;
+    background-color: #CFCFCF;
+  }
+}
+
+@media (min-width: 768px) {
+  body>header .burger-toggle {
+    display: none;
+  }
+}
+
+body>header nav {
+  flex-grow: 1;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out 0s, opacity 0.2s linear;
+}
+
+body>header nav.nav__mobile-open {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.2s linear 0.2s;
+}
+
+@media (min-width: 768px) {
+  body>header nav {
+    width: fit-content;
+    max-height: initial;
+    opacity: 1;
+  }
+}
+
+body>header nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  body>header nav ul {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+body>header nav ul li {
+  display: block;
+  position: relative;
+}
+
+body>header nav ul li.nav__current:after {
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: 12px;
+  content: "";
+  height: 3px;
+  width: 26px;
+  border-radius: 2px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  body>header nav ul li.nav__current:after {
+    left: 0;
+    right: 0;
+  }
+}
+
+body>header nav ul li.nav__current a {
+  font-weight: 700;
+}
+
+body>header nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 16px 12px;
+}
+
+body>header a.header__download {
+  display: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  body>header a.header__download {
+    display: block;
+  }
+
+
+
+}
+
+body>footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #262b2c;
+  border-top: 2px solid #FA3B51;
+}
+
+p {
+  margin-left: 120px;
+  margin-top: 1rem;
+}
