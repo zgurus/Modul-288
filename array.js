@@ -15,3 +15,10 @@ var me = {
     for(x in me){
         console.log(me[x]);
     }
+
+    const myJSON = JSON.stringify(me);
+
+    var x;
+    for(x in me){
+        console.log(me[x]);
+    }
