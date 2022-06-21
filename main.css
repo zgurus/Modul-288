@@ -286,8 +286,8 @@ form{
     height: 550px;
     width: 550px;
 
-    background-color: #222831;
-    box-shadow: -15px -15px 0px 23px inset rgb(76, 0, 255);
+    
+    
 
     position: absolute;
     top: 50%;
@@ -304,6 +304,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
     color: white;
+    margin-left: 20px;
 }
 input{
     height: 60px;
